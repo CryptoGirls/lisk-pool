@@ -123,21 +123,6 @@ The scripts are also runnable by cron.
 `./trx24.sh`
 
 
-### Pay all the voters
-
-Even if you will run the payments daily, because of the 6 hours vote cycle, you can miss to pay some voters that voted for you in the first cycle of the day and they removed their vote. To prevent this, you can follow the next 2 steps:
-
-1. Run the following line periodically (every 3 hours/6 hours). No payments will be broadcasted.
-
-```python3 trxpool.py -c config_snapshot.json```
-
-2. Run the script normally to broadcast the payments
-```
-python3 trxpool.py
-bash payments.sh
-```
-
-
 ## Command line usage
 
 ```

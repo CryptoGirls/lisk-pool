@@ -104,9 +104,23 @@ The payments will be broadcasted every second.
 
 ## Batch mode
 
-The scripts are also runnable by cron:
+The scripts are also runnable by cron.
 
-`See votes.sh, trx.sh and trx24.sh`
+- give rights to execute
+
+`chmod +x votes.sh`
+
+`chmod +x trx.sh`
+
+`chmod +x trx24.sh`
+
+- execute the scripts
+
+`./votes.sh`
+
+`./trx.sh`
+
+`./trx24.sh`
 
 
 ### Pay all the voters

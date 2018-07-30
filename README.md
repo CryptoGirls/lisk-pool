@@ -1,5 +1,7 @@
 # TRX pool distribution software
 
+Use: to distribute a percentage of TRX rewards to the voters
+
 ## Configuration
 Edit config.json and config_snapshot.json and modify the lines with your settings:
 
@@ -81,13 +83,19 @@ snapshotNo int);
 
 ## Running it
 
+1. At the start of each round - 4 times a day
+
+```node votes.js```
+
+2. At the end of each round - 3 times a day (the script will calculate pending amounts)
+
 ```python3 trxpool.py```
 
-or if you want to use another config file:
+3. At the end of the 4th round - once a day (the script will create a file called "payments.sh")
 
 ```python3 trxpool.py -c config_snapshot.json```
 
-It produces a file "payments.sh" with all payments shell commands. Run this file with:
+The file "payments.sh" will have all payments shell commands. Run this file with:
 
 ```bash payments.sh```
 
@@ -96,9 +104,9 @@ The payments will be broadcasted every second.
 
 ## Batch mode
 
-The script is also runnable by cron using the -y argument:
+The scripts are also runnable by cron:
 
-`python3 trxpool.py -y`
+`See votes.sh, trx.sh and trx24.sh`
 
 
 ### Pay all the voters

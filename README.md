@@ -1,4 +1,4 @@
-# TRX pool distribution software
+# TRX distribution software
 
 Use: to distribute a percentage of TRX rewards to the voters
 

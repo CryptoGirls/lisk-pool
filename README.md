@@ -60,6 +60,12 @@ sudo apt install npm
 
 npm install axios
 
+- node doesn't work? Install a newer version:
+
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
 ```
 
 If you want to save snapshots in your database, create the following tables in your database:

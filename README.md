@@ -48,6 +48,8 @@ sudo pip3 install psycopg2-binary
 
 git clone https://github.com/CryptoGirls/trx-pool
 
+cd trx-pool
+
 sudo apt install nodejs
 
 sudo apt install npm

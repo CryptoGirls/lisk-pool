@@ -92,15 +92,18 @@ insertDate int,
 snapshotNo int);
 ```
 
-To not sending the private key in plain text to the network, it's recommended to install and configurate docker containers made by Rovak.
+To not send the private key in plain text to the network, it's recommended to install and configurate docker containers made by Rovak.
 
 ```
 apt install docker docker-compose
 
 git clone https://github.com/tronscan/tronscan-docker
 
+```
+
 In docker-compose.yml file put your SR IP in full and solidity IPs:
 
+```
       NODE_FULL_IP: "YOUR_SR_IP_HERE"
       NODE_FULL_PORT: "50051"
       NODE_SOLIDITY_IP: "YOUR_SR_IP_HERE"
@@ -108,16 +111,16 @@ In docker-compose.yml file put your SR IP in full and solidity IPs:
       ENABLE_SYNC: "false"
       ENABLE_NETWORK_SCANNER: "false"
       SECRET_KEY: "aSLtAkzrIY9pTPyboOih"
+```
 
 Run it in screen:
 
-./start.sh
-
-After that, you should be able to call the API from 
-
-http://127.0.0.1:9000
-
 ```
+./start.sh
+```
+
+After that, you should be able to call the API from http://127.0.0.1:9000
+
 
 
 ## Running it

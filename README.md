@@ -36,7 +36,7 @@ If you want to run a private pool, you need to edit config.json and:
 - whitelist: put a list of addresses you wish to include
 
 
-## Dependecies
+## Dependencies
 ```
 sudo apt install python3-pip
 

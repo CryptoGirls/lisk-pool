@@ -92,7 +92,7 @@ insertDate int,
 snapshotNo int);
 ```
 
-To not send the private key in plain text to the network, it's recommended to install and configurate docker containers made by Rovak.
+To not send the private key in plain text to the network, it's recommended to install and configure docker containers made by Rovak.
 
 ```
 apt install docker docker-compose
@@ -119,7 +119,7 @@ Run it in screen:
 ./start.sh
 ```
 
-After that, you should be able to call the API from http://127.0.0.1:9000
+Now you should be able to call the API from http://127.0.0.1:9000
 
 
 

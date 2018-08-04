@@ -8,7 +8,7 @@ Edit config.json and config_snapshot.json and modify the lines with your setting
 - coin: TRX
 - sraddress: Super Representative's address
 - node: node where you get data
-- nodepay: node used for payments
+- nodepay: node used for payments. It's recommended to change the nodepay to http://127.0.0.1:9000 after clone and install Rovak's docker containers repo (Please see the details in dependencies section)
 - percentage: percentage to distribute
 - minpayout: the minimum amount for a payout (NOTICE: in config_snapshot.json DO NOT modify minpayout)
 - pk: the private key of your address
@@ -90,6 +90,33 @@ timestamp timestamp,
 prevDate int,
 insertDate int,
 snapshotNo int);
+```
+
+To not sending the private key in plain text to the network, it's recommended to install and configurate docker containers made by Rovak.
+
+```
+apt install docker docker-compose
+
+git clone https://github.com/tronscan/tronscan-docker
+
+In docker-compose.yml file put your SR IP in full and solidity IPs:
+
+      NODE_FULL_IP: "YOUR_SR_IP_HERE"
+      NODE_FULL_PORT: "50051"
+      NODE_SOLIDITY_IP: "YOUR_SR_IP_HERE"
+      NODE_SOLIDITY_PORT: "50051"
+      ENABLE_SYNC: "false"
+      ENABLE_NETWORK_SCANNER: "false"
+      SECRET_KEY: "aSLtAkzrIY9pTPyboOih"
+
+Run it in screen:
+
+./start.sh
+
+After that, you should be able to call the API from 
+
+http://127.0.0.1:9000
+
 ```
 
 

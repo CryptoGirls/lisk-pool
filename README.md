@@ -131,11 +131,11 @@ Now you should be able to call the API from http://127.0.0.1:9000
 
 2. At the end of each round - 3 times a day (the script will calculate pending amounts)
 
-```python3 trxpool.py```
+```python3 trxpool.py -c config_snapshot.json```
 
 3. At the end of the 4th round - once a day (the script will create a file called "payments.sh")
 
-```python3 trxpool.py -c config_snapshot.json```
+```python3 trxpool.py```
 
 The file "payments.sh" will have all payments shell commands. Run this file with:
 

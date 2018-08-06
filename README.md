@@ -150,7 +150,7 @@ The scripts are also runnable by cron.
 
 - give rights to execute
 
-`chmod +x votes.sh`
+`chmod +x voters.sh`
 
 `chmod +x trx.sh`
 
@@ -158,7 +158,7 @@ The scripts are also runnable by cron.
 
 - execute the scripts
 
-`./votes.sh`
+`./voters.sh`
 
 `./trx.sh`
 

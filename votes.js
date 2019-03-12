@@ -15,8 +15,8 @@ async function loadVotes() {
     let {data} = await xhr.get("https://api.tronscan.org/api/vote", {
       params: {
         candidate: CANDIDATE_ADDRESS,
-        limit: 100,
-        sort: 'timestamp',
+        limit: 50,
+        sort: 'votes',
         start,
       }
     });
@@ -27,7 +27,7 @@ async function loadVotes() {
       break;
     }
 
-    start += 100;
+    start += 50;
 
     results = [...results, ...data.data];
   }
